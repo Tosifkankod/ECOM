@@ -7,7 +7,6 @@
 
 /frontend/coverage
 
-/frontend/build
 
 /backend/config/config.env
 /frontend/.DS_Store
