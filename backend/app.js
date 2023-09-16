@@ -4,7 +4,8 @@ const errorMiddleware = require('./middleware/error');
 const bodyParser = require('body-parser');
 const fileUpload  = require('express-fileupload')
 const dotenv = require('dotenv')
-const path = require('path')
+const path = require('path');
+
 
 const app = express();
  
