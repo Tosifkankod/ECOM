@@ -1,0 +1,112 @@
+{
+    "builds": [
+      {
+        "src": "server.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "build/**",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+        {
+            "src": "/order/new", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/order/:id", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/orders/me", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/admin/orders", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/admin/order/:id", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/payment/process", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/stripeapikey", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/admin/products", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/products", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/admin/product/new", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/admin/product/:id", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/product/:id", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/review", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/reviews", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/register", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/login", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/password/forgot", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/password/reset/:token", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/logout", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/me", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/password/update", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/me/update", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/admin/users", 
+            "dest": "backend/index.js"
+        },
+        {
+            "src": "/admin/user/:id", 
+            "dest": "backend/index.js"
+        }
+    ],
+  
+    "rewrites": [{ "source": "/(.*)", "destination": "backend/server.js" }]
+  }
