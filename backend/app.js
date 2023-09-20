@@ -34,6 +34,7 @@ app.use('/api/v1', payment)
 app.use(express.static(path.join(__dirname,"../backend/build")))
 
 app.get("*", (req, res) => {
+    console.log("first")
     res.sendFile(path.resolve(__dirname,"../backend/build/index.html"))
 })
 
