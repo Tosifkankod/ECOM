@@ -11,99 +11,99 @@
     ],
     "routes": [
         {
-            "src": "/order/new", 
+            "src": "/api/v1/order/new", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/order/:id", 
+            "src": "/api/v1/order/:id", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/orders/me", 
+            "src": "/api/v1/orders/me", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/admin/orders", 
+            "src": "/api/v1/admin/orders", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/admin/order/:id", 
+            "src": "/api/v1/admin/order/:id", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/payment/process", 
+            "src": "/api/v1/payment/process", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/stripeapikey", 
+            "src": "/api/v1/stripeapikey", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/admin/products", 
+            "src": "/api/v1/admin/products", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/products", 
+            "src": "/api/v1/products", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/admin/product/new", 
+            "src": "/api/v1/admin/product/new", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/admin/product/:id", 
+            "src": "/api/v1/admin/product/:id", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/product/:id", 
+            "src": "/api/v1/product/:id", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/review", 
+            "src": "/api/v1/review", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/reviews", 
+            "src": "/api/v1/reviews", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/register", 
+            "src": "/api/v1/register", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/login", 
+            "src": "/api/v1/login", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/password/forgot", 
+            "src": "/api/v1/password/forgot", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/password/reset/:token", 
+            "src": "/api/v1/password/reset/:token", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/logout", 
+            "src": "/api/v1/logout", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/me", 
+            "src": "/api/v1/me", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/password/update", 
+            "src": "/api/v1/password/update", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/me/update", 
+            "src": "/api/v1/me/update", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/admin/users", 
+            "src": "/api/v1/admin/users", 
             "dest": "backend/index.js"
         },
         {
-            "src": "/admin/user/:id", 
+            "src": "/api/v1/admin/user/:id", 
             "dest": "backend/index.js"
         }
     ],
